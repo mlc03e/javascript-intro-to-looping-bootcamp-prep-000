@@ -1,11 +1,8 @@
-const [array, t] = makeArray()
-const strangeArray = forLoop(array)
-const testArray = strangeArray.slice(array.length)
-
 function forLoop(array){
 for (let i = 0; i < 25; i++);
-array.push("I am ${i} strange loop${i === 0 ? \'\' : \'s\'}.")
-}
+if (i === 1) console.log("I am ${i} strange loop.")
+else console.log("")
+
 
 function whileLoop(n) {
 let countdown = n;
