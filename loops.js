@@ -21,9 +21,9 @@ do {
 } while (i < 5);
 
 function doWhileLoop(array){
-  let countdown = array;
+  let incrementVariable = array;
   }
-    do { console.log(-- countdown);
+    do { console.log(-- array.length);
     doWhileLoop()
     }
     while (array.length > 0 && incrementVariable());
