@@ -11,11 +11,12 @@ function forLoop(array) {
 }
 
 function whileLoop(n) {
-let countdown = n;
-while (countdown > 0) {
-console.log(-- countdown);
-if (countdown === 0) return 'done'
+  let countdown = n;
+  while (countdown > 0) {
+    console.log(-- countdown);
+  if (countdown === 0){ return 'done'}
   }
+}
   
 
 function doWhileLoop(array){
@@ -26,7 +27,9 @@ function doWhileLoop(array){
   
     do { 
       console.log(-- array.length);
-    doWhileLoop()
+      array = array.slice(1)
+      incrementVariable()
     }
-    while (array.length > 0 && incrementVariable());
+    while (array.length > 0 && i < 5);
+    return array
   }
