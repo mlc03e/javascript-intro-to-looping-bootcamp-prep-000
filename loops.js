@@ -17,19 +17,15 @@ console.log(-- countdown);
 if (countdown === 0) return 'done'
   }
   
-function incrementVariable() {
-  i = i + 1;
-}
-
-do {
-  console.log("doo-bee-doo-bee-doo");
-  incrementVariable();
-} while (i < 5);
 
 function doWhileLoop(array){
-  let incrementVariable = array;
-  }
-    do { console.log(-- array.length);
+  let i = 0
+  function incrementVariable() {
+    i = i + 1;
+    }
+  
+    do { 
+      console.log(-- array.length);
     doWhileLoop()
     }
     while (array.length > 0 && incrementVariable());
